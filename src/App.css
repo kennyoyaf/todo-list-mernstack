@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+  height: 100vh;
+  width: 100%;
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section-center {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.todo-form h3 {
+  color: navy;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.form-control {
+  display: flex;
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.todo {
+  height: 20px;
+  width: 100%;
+  border: none;
+  background-color: beige;
+  height: 25px;
+  width: 300px;
+  padding-left: 1rem;
+}
+
+.submit-btn {
+  background-color: greenyellow;
+  color: black;
+  border: 1px solid greenyellow;
+  font-weight: 700;
+  padding: 2px 10px;
+}
+
+.clear-btn {
+  color: red;
+  border: none;
+  background-color: white;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 1.5rem;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-container {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-list {
+  width: 100%;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem 0;
+  margin-bottom: 0.8rem;
+}
+
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+}
+.alert-success {
+  color: #155724;
+  background: #d4edda;
+}
+
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 0.7rem;
+  margin: 0 0.15rem;
+  transition: var(--transition);
+}
+.edit-btn {
+  color: var(--clr-green-light);
+}
+.edit-btn:hover {
+  color: var(--clr-green-dark);
+}
+.delete-btn {
+  color: var(--clr-red-light);
+}
+.delete-btn:hover {
+  color: var(--clr-red-dark);
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
