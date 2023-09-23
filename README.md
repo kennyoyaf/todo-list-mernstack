@@ -4,6 +4,7 @@
 The todo-list is to help organize your daily activities. This fullstack web application is made to help keep to time and get all task done. ## Authors
 
 - [@kehindeOyafemi](https://github.com/kennyoyaf)
+- [@BabajideOyafemi](https://github.com/Babajide777)
 
 
 ## Documentation
